@@ -32,7 +32,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeCardComponent } from './shared/home-cards/home-card/home-card.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { DiningTablesComponent } from './products/dining-tables/dining-tables/dining-tables.component';
 import { AboutUsComponent } from './about-us/about-us.component'
 
@@ -58,7 +57,6 @@ import { AboutUsComponent } from './about-us/about-us.component'
   ],
   imports: [
     BrowserModule,
-    CarouselModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
