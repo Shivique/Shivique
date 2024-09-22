@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Product ID B1",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/1.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B2",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/2.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B3",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/3.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B4",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/4.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B5",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/5.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B6",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/6.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B7",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/7.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B8",
+      "price": "Price On Request",
+      "image": "assets/photos/Dining tables/8.jpg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    }
+]

@@ -1,0 +1,63 @@
+<h2 mat-dialog-title>Contact Form</h2>
+<mat-dialog-content>
+  <form name="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" netlify>
+    <!-- Name -->
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput id="name" formControlName="name" placeholder="Enter your name" required>
+      <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Email -->
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput id="email" formControlName="email" placeholder="Enter your email" required>
+      <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
+        Email is required
+      </mat-error>
+      <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+        Enter a valid email address
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Phone -->
+    <div class="phone-container">
+      <!-- Country Code -->
+      <mat-form-field appearance="outline" class="country-code">
+        <mat-label>Code</mat-label>
+        <input matInput id="countryCode" formControlName="countryCode" placeholder="+1" required>
+        <mat-error *ngIf="contactForm.get('countryCode')?.hasError('required')">
+          Country code is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Phone -->
+      <mat-form-field appearance="outline" class="phone-number">
+        <mat-label>Phone</mat-label>
+        <input matInput id="phone" formControlName="phone" placeholder="Enter your phone number" required>
+        <mat-error *ngIf="contactForm.get('phone')?.hasError('required')">
+          Phone number is required
+        </mat-error>
+        <mat-error *ngIf="contactForm.get('phone')?.hasError('pattern')">
+          Enter a valid phone number
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Requirements -->
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Requirements</mat-label>
+      <textarea matInput id="requirements" formControlName="requirements" placeholder="Enter your requirements" required></textarea>
+      <mat-error *ngIf="contactForm.get('requirements')?.hasError('required')">
+        Requirements are required
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="contactForm.invalid" (click)="onSubmit()">Submit</button>
+</mat-dialog-actions>

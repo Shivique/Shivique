@@ -1,0 +1,68 @@
+[
+    {
+      "title": "Product ID C1",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/1.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B2",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/2.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B3",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/3.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B4",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/4.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B5",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/5.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B6",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/6.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B7",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/7.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B8",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/8.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B9",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/9.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B10",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/10.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B11",
+      "price": "Price On Request",
+      "image": "assets/photos/KITCHENS/11.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    }
+]

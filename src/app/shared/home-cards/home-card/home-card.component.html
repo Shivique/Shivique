@@ -1,0 +1,16 @@
+  <div class="popup-container">
+    <div class="popup-content">
+      <button class="close-btn" mat-button mat-dialog-close>x</button>
+      <div class="popup-header">
+        <h1>{{ data.title }}</h1>
+      </div>
+      <div class="popup-body">
+        <div class="popup-text">
+          <p>{{ data.description }}</p>
+        </div>
+        <div class="popup-image">
+          <img [src]="data.image" alt="{{ data.title }}">
+        </div>
+      </div>
+    </div>
+  </div>

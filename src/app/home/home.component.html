@@ -1,0 +1,89 @@
+ <!-- Content Section -->
+ <div class="content-section">
+    <div class="content-text">
+      <h2>Offer for Best Interior</h2>
+      <h1>An aesthetic room is given harmony</h1>
+      <p>
+        Change your view to realize a neat and aesthetic corner of the house and amaze everyone, especially your nuclear family. Make every moment of your home equipment a valuable item.
+      </p>
+      <a mat-stroked-button color="accent" href="#">Explore Now</a>
+    </div>
+    <div class="content-image">
+      <video #introVideo height="800" autoplay muted loop playsinline>
+        <source src="assets/photos/Home/Home-page-intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    
+  </div>
+
+  <div class="container-cat">
+    <p class="category-cat">CATEGORY</p>
+    <h1 class="title-cat">Discover Your Signature Style</h1>
+    <p class="description-cat">At Upstairs, we pride ourselves on our versatility and ability to bring various design styles to life.</p>
+</div>
+
+
+
+  <div #container class="masonry-with-columns">
+    <div style="order: 0"></div>
+    <div style="order: 1"></div>
+    <div style="order: 0"></div>
+    <div style="order: 1"></div>
+    <div style="order: 2"></div>
+    <div style="order: 0"></div>
+    <div style="order: 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="left-content">
+        <h1>Modern</h1>
+        <h1>Classic</h1>
+    </div>
+    <div class="right-content">
+        <h2>Luxury decor to create comfort in our home</h2>
+        <p>With our passion for extraordinary room solutions and our uncompromising quality awareness of craftsmanship, we create functional ones.</p>
+        <p>We create distinctive interiors with a unique atmosphere.</p>
+        <a href="#" class="view-gallery">View Gallery</a>
+    </div>
+</div>
+
+  
+<div class="cards-container">
+<div class="card" *ngFor="let card of cards; let i = index" [ngClass]="{'bg-image': i === 1}" (click)="openDialog(card)">
+  <div class="card-content" *ngIf="i !== 1">
+    <h4>{{ card.title }}</h4>
+    <h2>{{ card.number }}</h2>
+    <!-- <p>{{ card.description }}</p> -->
+    <a href="{{ card.link }}">See Detail →</a>
+  </div>
+  <div class="card-content-overlay" *ngIf="i === 1">
+    <div class="overlay-box">
+      <a>{{ card.title }}</a>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-cat">
+<p class="category-cat">FAQ's</p>
+<h1 class="title-cat">Frequently Asked Questions</h1>
+</div>
+
+<div class="carousel-container">
+<div *ngFor="let review of reviews; let i = index" [class]="getSlideClass(i)" class="carousel-slide">
+  <div class="review-card">
+    <!-- <h3>{{ review.name }}</h3> -->
+    <h3>{{ review.question }}</h3>
+    <p>{{ review.answer }}</p>
+  </div>
+</div>
+<button class="carousel-control prev-btn" (click)="prevSlide()">&#10094;</button>
+<button class="carousel-control next-btn" (click)="nextSlide()">&#10095;</button>
+</div>
+
+
+
+

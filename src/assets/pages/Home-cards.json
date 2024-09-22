@@ -1,0 +1,27 @@
+  [
+    {
+      "cardNumber": 1,
+      "title": "Bedroom",
+      "description": "A bedroom is a private space designed for rest and relaxation. It typically includes essential furniture like a bed, nightstands, and wardrobes, creating a comfortable and peaceful environment. Bedrooms often reflect personal style with color schemes, decor, and lighting. Storage solutions like closets help keep the space organized and clutter-free, while soft bedding and textiles enhance comfort and well-being.",
+      "image": "assets/photos/Home/Cards/bed-card.jpg"
+    },
+    {
+      "cardNumber": 2,
+      "title": "Kitchen",
+      "description": "The kitchen is a functional hub where cooking and socializing often take place. It includes essential appliances like a stove, refrigerator, and ample storage cabinets. Efficient kitchen layouts, such as L-shaped or open-plan designs, enhance workflow. Modern kitchens often feature islands for extra seating and workspace, balancing utility with style and comfort.",
+      "image": "assets/photos/Home/Cards/kitchen-card.jpg"
+    },
+    {
+      "cardNumber": 3,
+      "title": "Living Room",
+      "description": "The living room is a versatile space for relaxation, entertainment, and social gatherings. It typically includes seating like sofas, a coffee table, and a media unit. Lighting, decor, and personal touches such as artwork or plants create a warm and inviting atmosphere. The living room may also serve as a multifunctional space, blending comfort and style.",
+      "image": "assets/photos/Home/Cards/livingRoom-card.jpg"
+    },
+    {
+      "cardNumber": 4,
+      "title": "Office",
+      "description": "An office is a dedicated space for work and productivity, featuring a desk, ergonomic chair, and essential tools like computers and filing cabinets. Good lighting, proper organization, and an efficient layout contribute to a focused work environment. Personal touches like decor and plants make the office more inviting and conducive to concentration.",
+      "image": "assets/photos/Home/Cards/office-card.jpg"
+    }
+  ]
+  

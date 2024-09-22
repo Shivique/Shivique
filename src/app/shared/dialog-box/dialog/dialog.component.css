@@ -1,0 +1,46 @@
+.dialog-content {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; 
+    margin-bottom: 16px;
+  }
+  
+  mat-dialog-content {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  mat-dialog-actions {
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .dialog-content {
+      max-width: 90%; 
+      height: auto;
+      padding: 8px;
+    }
+  
+    .image-container {
+      max-width: 100px;
+      margin-bottom: 12px;
+    }
+  
+    .product-image {
+      max-width: 100px; 
+    }
+  }
+
+
+  
+  

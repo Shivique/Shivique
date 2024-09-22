@@ -1,0 +1,17 @@
+<h3 class="title">Frequently Asked Questions</h3>
+
+   <div class="faq-container">
+    <div *ngFor="let faq of faqs" class="faq-item" [ngClass]="{'expanded': faq.showAnswer}">
+      <h3 (click)="faq.showAnswer = !faq.showAnswer">
+        {{ faq.question }}
+        <!-- <span>
+          <i class="icon" [ngClass]="faq.showAnswer ? 'expanded-icon' : 'collapsed-icon'">+</i>
+        </span> -->
+      </h3>
+      <div class="answer">
+        <p>{{ faq.answer }}</p>
+      </div>
+      <hr *ngIf="faq.divider" class="faq-divider" />
+    </div>
+  </div>
+  

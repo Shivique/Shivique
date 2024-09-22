@@ -1,0 +1,70 @@
+.full-width {
+    padding-top: 1rem;
+    width: 100%;
+  }
+  
+  mat-form-field {
+    margin-bottom: 16px;
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    padding: 0;
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-outline-start,
+  .mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border: 2px solid #3f51b5; 
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+    border-color: #3f51b5; 
+  }
+  
+  mat-dialog-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  mat-dialog-actions button {
+    margin-left: 10px;
+  }
+  
+  mat-dialog-content {
+    padding: 0 24px;
+  }
+  
+  mat-error {
+    color: #f44336; 
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  button[mat-raised-button] {
+    background-color: #3f51b5; 
+    color: white;
+  }
+  
+  button[mat-raised-button]:disabled {
+    background-color: #bdbdbd;
+  }
+  
+  .phone-container {
+    display: flex;
+    gap: 16px; /* Space between country code and phone number fields */
+  }
+  
+  .country-code {
+    flex: 0 0 30%; /* Fixed 30% width for country code */
+  }
+  
+  .phone-number {
+    flex: 0 0 65%; /* Fixed 70% width for phone number */
+  }
+  
+  @media (max-width: 600px) {
+    .phone-container {
+      flex-direction: column; /* Stack fields vertically on smaller screens */
+    }
+  }
+  

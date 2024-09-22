@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="center-stripe">
+      <div class="text-cutout">ABOUT US</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Learn more about us and our policies</h1>
+    </div>
+   
+    <div class="card-container">
+        <div class="card" (click)="openModal('about')">
+          <h2>About Us</h2>
+          <p>A brief overview of our company and mission.</p>
+        </div>
+    
+        <div class="card" (click)="openModal('privacy')">
+          <h2>Privacy Policy</h2>
+          <p>Understand how we handle your data.</p>
+        </div>
+    
+        <div class="card" (click)="openModal('terms')">
+          <h2>Terms and Conditions</h2>
+          <p>Read our terms for using our services.</p>
+        </div>
+    
+        <div class="card" (click)="openModal('faqs')">
+          <h2>FAQs</h2>
+          <p>Common questions and answers.</p>
+        </div>
+      </div>
+
+  </div>
+  
+    <!-- Modal -->
+    <div class="modal" *ngIf="selectedSection" (click)="onOutsideClick($event)">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+          <span class="close-btn" (click)="closeModal()">&times;</span>
+          
+          <!-- Show modal title for non-FAQ sections -->
+          <ng-container *ngIf="selectedSection !== 'faqs'">
+            <h2>{{ modalTitle }}</h2>
+            <div class="modal-body" [innerHTML]="modalContent"></div>
+          </ng-container>
+          
+          <!-- Load the FAQ component inside the modal -->
+          <ng-container *ngIf="selectedSection === 'faqs'">
+            <app-faq></app-faq>
+          </ng-container>
+        </div>
+      </div>
+      
+      
+  

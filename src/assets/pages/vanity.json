@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Product ID C1",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/1.jpeg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B2",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/2.jpeg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B3",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/3.jpeg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B4",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/4.jpeg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B5",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/5.jpeg",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B6",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/6.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B7",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/7.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B8",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/8.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B9",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/9.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B10",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/10.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B11",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/11.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    },
+    {
+      "title": "Product ID B12",
+      "price": "Price On Request",
+      "image": "assets/photos/VANITY/12.png",
+      "description": "A sleek and powerful smartphone with all the latest features."
+    }
+]
