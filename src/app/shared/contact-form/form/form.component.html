@@ -1,6 +1,6 @@
 <h2 mat-dialog-title>Contact Form</h2>
 <mat-dialog-content>
-  <form name="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" netlify>
+  <form name="contact" [formGroup]="contactForm" (ngSubmit)="onSubmit()" method="POST" enctype="multipart/form-data" netlify>
     <!-- Name -->
     <mat-form-field class="full-width" appearance="outline">
       <mat-label>Name</mat-label>
@@ -54,10 +54,11 @@
         Requirements are required
       </mat-error>
     </mat-form-field>
+    <input type="hidden" name="form-name" value="contact" />
   </form>
 </mat-dialog-content>
 
-<mat-dialog-actions align="end">
+<mat-dialog-actions>
   <button mat-button mat-dialog-close>Cancel</button>
   <button mat-raised-button color="primary" [disabled]="contactForm.invalid" (click)="onSubmit()">Submit</button>
 </mat-dialog-actions>

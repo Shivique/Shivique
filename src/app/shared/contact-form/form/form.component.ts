@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
@@ -12,7 +13,8 @@ export class FormComponent {
 
   constructor(
     private fb: FormBuilder,
-    private dialogRef: MatDialogRef<FormComponent>
+    private dialogRef: MatDialogRef<FormComponent>,
+    private http: HttpClient
   ) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
@@ -27,6 +29,21 @@ export class FormComponent {
     if (this.contactForm.valid) {
       console.log('Form data:', this.contactForm.value);
       this.dialogRef.close();
+      const formData = this.contactForm.value;
+
+      formData['form-name'] = 'contact';
+      const headers = new HttpHeaders({
+        Accept: 'text/html',
+        'Content-Type': 'multipart/form-data',
+      });
+  
+      this.http
+        .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
+        .subscribe(() => {
+          setTimeout(()=> {
+           console.log('Form Submitted');
+          },1000);
+        });
     } else {
       this.contactForm.markAllAsTouched(); 
     }
