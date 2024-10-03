@@ -26,10 +26,10 @@
     <div class="phone-container">
       <!-- Country Code -->
       <mat-form-field appearance="outline" class="country-code">
-        <mat-label>Code</mat-label>
+        <mat-label>Country Code</mat-label>
         <input matInput id="countryCode" formControlName="countryCode" placeholder="+1" required>
         <mat-error *ngIf="contactForm.get('countryCode')?.hasError('required')">
-          Country code is required
+          Invalid code
         </mat-error>
       </mat-form-field>
 
